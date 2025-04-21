@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evans Buckman Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Evans Buckman</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Hello! 👋 I'm Evans</h2>
+      <p>Security Analyst & Web Designer specializing in UI/UX, Web Development, and Cybersecurity</p>
+    </div>
+  </section>
+
+  <section class="profile">
+    <div class="profile-card">
+      <h2>About Me</h2>
+      <p>
+        Experienced in intuitive interface design, threat analysis, incident response, and network security.
+        Skilled in Figma, HTML, CSS, JS and cybersecurity measures.
+      </p>
+      <h3>📜 Certifications</h3>
+      <ul>
+        <li>Google Cybersecurity – 2025</li>
+        <li>Openlabs Institute of Technology (2024 - 2025)</li>
+        <li>Cybersecurity | Hardware Networking</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>🛠 Skills</h2>
+    <div class="skill-list">
+      <ul>
+        <li>Cybersecurity</li>
+        <li>UI/UX Design</li>
+        <li>HTML, CSS, JS</li>
+        <li>Threat Analysis</li>
+        <li>Network Security</li>
+        <li>Adaptability</li>
+        <li>Creativity</li>
+        <li>Leadership</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>🚀 Featured Project</h2>
+    <div class="project-card" onclick="openModal()">
+      <img src="images/Lawfirm.png" alt="PK Law Firm" class="project-image"/>
+      <div class="project-content">
+        <div class="project-title">Patrick & Koomson Law Firm Website</div>
+        <p>
+          Professional legal website with clear navigation, visual branding, and appointment features.
+        </p>
+        <div class="project-tags">HTML • CSS • JavaScript • Responsive</div>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="images/code-screenshot.jpg" alt="Python IP Update Script" class="project-image">
+      <div class="project-content">
+        <div class="project-title">Algorithm for File Updates in Python</div>
+        <p>Developed a Python algorithm that parses a file containing allowed IP addresses and removes ones that no longer have access to restricted content.</p>
+        <div class="project-tags">Python • File I/O • Algorithm • Security</div>
+        <pre><code># Define a function to update the allowed IP list
+def update_file(import_file, remove_list):
+    with open(import_file, "r") as file:
+        ip_addresses = file.read().split()
+
+    for element in ip_addresses[:]:
+        if element in remove_list:
+            ip_addresses.remove(element)
+
+    with open(import_file, "w") as file:
+        file.write(" ".join(ip_addresses))
+
+update_file("allow_list.txt", [
+    "192.168.25.60",
+    "192.168.140.81",
+    "192.168.203.198"
+])
+
+with open("allow_list.txt", "r") as file:
+    text = file.read()
+    print(text)</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>📞 Contact</h2>
+    <p><strong>Phone:</strong> +233 547443837</p>
+    <p><strong>Email:</strong> evans.buckman55@gmail.com</p>
+    <p><strong>Location:</strong> Golden Valley Lane3, Accra, Ghana</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Evans Buckman. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="images/Lawfirm.png" alt="Full Project View" />
+    </div>
+  </div>
+</body>
+</html>
