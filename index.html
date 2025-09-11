@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -35,7 +34,7 @@
       </p>
       <h3>📜 Certifications</h3>
       <ul>
-        <li>Coursera<li>
+        <li>Coursera</li>
         <li>IoT & Cloud Computing – Yonsei University (Jun 2025)</li>
         <li>CompTIA Security+ 701 – InfoSec (Apr 2025)</li>
         <li>Google Cybersecurity – (Mar 2025)</li>
@@ -62,13 +61,14 @@
         <li>Critical Thinking</li>
         <li>Problem Solving</li>
         <li>Familiarity with security tools</li>
-             
       </ul>
     </div>
   </section>
 
   <section class="projects" id="projects">
-    <h2>🚀 Featured Project</h2>
+    <h2>🚀 Featured Projects</h2>
+
+    <!-- Law Firm Website -->
     <div class="project-card" onclick="openModal()">
       <img src="images/Lawfirm.png" alt="PK Law Firm" class="project-image"/>
       <div class="project-content">
@@ -79,42 +79,48 @@
         <div class="project-tags">HTML • CSS • JavaScript • Responsive</div>
       </div>
     </div>
+
+    <!-- Python IP Update Script -->
     <div class="project-card">
       <img src="images/code-screenshot.jpg" alt="Python IP Update Script" class="project-image">
       <div class="project-content">
         <div class="project-title">Algorithm for File Updates in Python</div>
         <p>Developed a Python algorithm that parses a file containing allowed IP addresses and removes ones that no longer have access to restricted content.</p>
         <div class="project-tags">Python • File I/O • Algorithm • Security</div>
-        <pre><code># Define a function to update the allowed IP list
-def update_file(import_file, remove_list):
-    with open(import_file, "r") as file:
-        ip_addresses = file.read().split()
-
-    for element in ip_addresses[:]:
-        if element in remove_list:
-            ip_addresses.remove(element)
-
-    with open(import_file, "w") as file:
-        file.write(" ".join(ip_addresses))
-
-update_file("allow_list.txt", [
-    "192.168.25.60",
-    "192.168.140.81",
-    "192.168.203.198"
-])
-
-with open("allow_list.txt", "r") as file:
-    text = file.read()
-    print(text)</code></pre>
       </div>
     </div>
+
+    <!-- Farm Dashboard (Expo React Native) -->
+    <div class="project-card">
+      <img src="images/farm-dashboard.png" alt="Farm Dashboard" class="project-image">
+      <div class="project-content">
+        <div class="project-title">AgriTech Farm Dashboard</div>
+        <p>
+          Mobile dashboard built with Expo (React Native) that displays farms, their locations, and details. Farmers can manage land data and buyers can view verified farms.
+        </p>
+        <div class="project-tags">React Native • Expo • UI/UX</div>
+      </div>
+    </div>
+
+    <!-- Supabase + Node.js Backend -->
+    <div class="project-card">
+      <img src="images/backend-api.png" alt="Backend API" class="project-image">
+      <div class="project-content">
+        <div class="project-title">Supabase + Node.js Express Backend</div>
+        <p>
+          RESTful API integrating PostgreSQL (via Supabase) with authentication, farms, products, orders, and payments. Forms the backbone of the AgriTech system.
+        </p>
+        <div class="project-tags">Node.js • Express • Supabase • PostgreSQL</div>
+      </div>
+    </div>
+
   </section>
 
   <section class="contact" id="contact">
     <h2>📞 Contact</h2>
     <p><strong>Phone:</strong> +233 547443837</p>
     <p><strong>Email:</strong> evans.buckman55@gmail.com</p>
-    <p><strong>Location:</strong> Daimond Hills-Gate2,Regimanuel Grey-Real Estate Accra, Ghana</p>
+    <p><strong>Location:</strong> Daimond Hills-Gate2, Regimanuel Grey-Real Estate Accra, Ghana</p>
   </section>
 
   <footer>
@@ -130,3 +136,4 @@ with open("allow_list.txt", "r") as file:
   </div>
 </body>
 </html>
+
